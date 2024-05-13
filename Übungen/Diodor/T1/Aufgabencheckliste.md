@@ -7,7 +7,7 @@
 - Installiere Visual Studio Code.
 - Füge Erweiterungen hinzu wie Live Server für Echtzeitvorschau und Auto Close Tag für automatisches Schließen von HTML-Tags.
 
-## 3. Hilfreiche Erweiterungen installlieren
+## 3. Hilfreiche Erweiterungen installieren
 - Visual Studio Code bietet zahlreiche Erweiterungen:
   - Live Server: Echtzeitvorschau der Webseite.
   - Auto Close Tag: Automatisches Schließen von HTML-Tags.
