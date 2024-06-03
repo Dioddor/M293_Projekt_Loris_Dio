@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #3ac949; /* Äußerster Hintergrund (erste Farbstufe) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-box {
+    width: 60%;
+    height: 60%;
+    background-color: #e80101; /* Inhaltshintergrund (vierte Farbstufe) */
+    padding: 5%;
+    border: 10px solid #1538e7; /* Rahmenfarbe (dritte Farbstufe) */
+    box-sizing: border-box;
+    margin: 10%; /* Zweite Farbstufe */
+    box-shadow: 0 0 0 20px #e1f85f; /* Fünfte Farbstufe */
+}
