@@ -1,6 +1,7 @@
 open www.loris.bplaced.net
-<loris>
-<niger1312>
+loris
+niger1312
 binary
+cd www
 put ftp.txt
 bye
