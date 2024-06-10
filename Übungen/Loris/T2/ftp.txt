@@ -1,0 +1,6 @@
+open www.loris.bplaced.net
+<loris.internett@gmail.com>
+<niger1312>
+binary
+put ftp.txt
+bye
