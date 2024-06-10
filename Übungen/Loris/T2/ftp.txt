@@ -1,5 +1,5 @@
 open www.loris.bplaced.net
-<loris.internett@gmail.com>
+<loris>
 <niger1312>
 binary
 put ftp.txt
