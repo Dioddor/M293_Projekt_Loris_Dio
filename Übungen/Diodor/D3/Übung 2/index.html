@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 20px;
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 10px;
+        }
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .product button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            h1 {
+                font-size: 3em;
+            }
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Kids Car Shop</h1>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://www.kidcars.de/images/product_images/original_images/1191280gb07.jpg" alt="Produkt 1">
+            <h2>Pink Benz</h2>
+            <p>250.00 Fr.</p>
+            <button>Kaufen</button>
+        </div>
+        <div class="product">
+            <img src="https://leantoys.com/ger_pl_Kinderfahrzeug-Kinderauto-BMW-X6-ROT-Auto-fur-Kinder-Fahrzeug-fur-Kinder-Auto-390_1.jpg" alt="Produkt 2">
+            <h2>BMW MFat</h2>
+            <p>200.00 Fr.</p>
+            <button>Kaufen</button>
+        </div>
+        <div class="product">
+            <img src="https://www.ledprofishop.de/WebRoot/Store6/Shops/62205331/57FD/4C84/1ADE/069B/DE38/C0A8/2BB8/D535/bobbycar.jpg" alt="Produkt 3">
+            <h2>Bobby is tha car</h2>
+            <p>50.00 Fr.</p>
+            <button>Kaufen</button>
+        </div>
+        <div class="product">
+            <img src="https://leantoys.com/ger_pl_Elektroauto-fur-Kinder-VOLVO-XC90-Blau-Lackiert-EVA-Reifen-Auto-Kinderfahrzeug-2363_5.jpg" alt="Produkt 4">
+            <h2>Volvo XC90</h2>
+            <p>150.00 Fr.</p>
+            <button>Kaufen</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn10.plentymarkets.com/mrt54q44tptl/item/images/15393/secondPreview/Elektroauto-Kinder-Jaguar-blau--1-.jpg" alt="Produkt 5">
+            <h2>Jagugar Blue</h2>
+            <p>300.00 Fr.</p>
+            <button>Kaufen</button>
+        </div>
+        <div class="product">
+            <img src="https://www.menila-gmbh.de/images/menila/1191265gb09.jpg" alt="Produkt 6">
+            <h2>Bugatt<h2>
+            <p>600.00 Fr.</p>
+            <button>Kaufen</button>
+        </div>
+    </div>
+</body>
+</html>
