@@ -5,7 +5,7 @@ setlocal
 set SERVER=www.loris.bplaced.net
 set PORT=21
 set USERNAME=loris.internett@gmail.com
-set PASSWORD=niger1312
+set PASSWORD=GEHEIMES PASSWORT
 set LOCAL_PATH="C:\Users\Loris TBZ\OneDrive - TBZ\Dokumente\GitHub\M293_Projekt_Loris_Dio\Übungen\Loris\H2"
 set REMOTE_PATH=/htdocs
 
