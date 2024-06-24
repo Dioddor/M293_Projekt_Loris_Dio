@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Demographische Datenerhebung</title>
+</head>
+<body>
+    <h1>Demographische Datenerhebung</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Persönliche Informationen</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="alter">Alter:</label>
+            <input type="number" id="alter" name="alter" min="0"><br><br>
+            
+            <label for="geschlecht">Geschlecht:</label>
+            <select id="geschlecht" name="geschlecht">
+                <optgroup label="Weiblich">
+                    <option value="frau">Frau</option>
+                    <option value="maedchen">Mädchen</option>
+                </optgroup>
+                <optgroup label="Männlich">
+                    <option value="mann">Mann</option>
+                    <option value="junge">Junge</option>
+                </optgroup>
+            </select><br><br>
+            
+            <label for="land">Land:</label>
+            <input type="text" id="land" name="land"><br><br>
+        </fieldset>
+        
+        <input type="submit" value="Abschicken">
+    </form>
+</body>
+</html>
