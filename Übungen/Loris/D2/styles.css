@@ -7,13 +7,6 @@ body {
     align-items: center;
 }
 
-header {
-    background-color: #ffa1a1;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    width: 100%;
-}
 
 .grid-container {
     display: grid;
@@ -32,4 +25,5 @@ header {
     justify-content: center;
     align-items: center;
     height: 150px;
+    
 }
