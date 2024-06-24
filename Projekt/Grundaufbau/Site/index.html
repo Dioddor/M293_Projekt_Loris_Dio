@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Shop</title>
+    <title></title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Summer Shop</h1>
+        <h1>Pazifffic Chilll</h1>
         <button id="homeButton">Home</button>
         <nav>
             <ul>
-                <li><a href="#register">Register</a></li>
+                <li><a href="#register">Register</a></li>,
                 <li><a href="#login">Login</a></li>
                 <li><a href="#reset-password">Forgot Password</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="img">
+            <img src="https://wallpapers.com/images/hd/4k-beach-tropical-island-kkmmigyqbuymrph4.jpg" alt="Hero Image"/>
+        </section>
         <section id="home" class="product-grid">
             <div class="product">
                 <img src="product1.jpg" alt="Product 1">
@@ -68,7 +71,7 @@
         </section>
 
         <section id="register">
-            <h2>Register</h2>
+            <h2 class="registration-title">Register</h2>
             <form action="/submit-registration" method="POST">
                 <label for="gender">Gender</label>
                 <input type="radio" id="gender-male" name="gender" value="male"> Male
@@ -99,8 +102,26 @@
                 <select id="country" name="country" required>
                     <option value="USA">USA</option>
                     <option value="Canada">Canada</option>
-                    <!-- Add more countries as needed -->
-                </select>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="China">China</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="France">France</option>
+                    <option value="Greece">Greece</option>
+                    <option value="India">India</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Norway">Norway</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                </select>                
                 <br>
                 <label for="accept-terms">
                     <input type="checkbox" id="accept-terms" name="accept-terms" required>
@@ -112,7 +133,7 @@
         </section>
 
         <section id="login">
-            <h2>Login</h2>
+            <h2 class="login-title">Login</h2>
             <form action="/submit-login" method="POST">
                 <label for="email">Email</label>
                 <input type="email" id="login-email" name="email" required>
@@ -125,7 +146,7 @@
         </section>
 
         <section id="reset-password">
-            <h2>Forgot Password</h2>
+            <h2 class="forgot-password-title">Forgot Password</h2>
             <form action="/submit-reset-password" method="POST">
                 <label for="email">Email</label>
                 <input type="email" id="reset-email" name="email" required>
@@ -135,7 +156,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Summer Shop. All rights reserved.</p>
+        <p>&copy; 2024 Pazifffic Chilll. All rights reserved.</p>
     </footer>
     <script>
         document.getElementById('homeButton').onclick = function() {

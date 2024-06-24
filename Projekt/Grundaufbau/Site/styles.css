@@ -1,15 +1,38 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f8ff;
+    background-color: #eddd73;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.registration-title {
+    text-align: center;
+}
+
+.login-title {
+    text-align: center;
+}
+
+.forgot-password-title {
+    text-align: center;
+}
+
+main > section:first-child img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #ff7f50;
-    color: white;
+    background-color: #50b3ff;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1em 0;
 }
@@ -91,7 +114,7 @@ form input, form select, form button {
 }
 
 form button {
-    background-color: #ff7f50;
+    background-color: #50ff50;
     color: white;
     border: none;
     cursor: pointer;
