@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pazifffic Chilll</h1>
+        <button id="homeButton">Home</button>
+        <nav>
+            <ul>
+                <li><a href="#register">Register</a></li>,
+                <li><a href="#login">Login</a></li>
+                <li><a href="#reset-password">Forgot Password</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="img">
+            <img src="https://wallpapers.com/images/hd/4k-beach-tropical-island-kkmmigyqbuymrph4.jpg" alt="Hero Image"/>
+        </section>
+        <section id="home" class="product-grid">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>€10.00</p>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>€15.00</p>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>€20.00</p>
+            </div>
+            <div class="product">
+                <img src="product4.jpg" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>€25.00</p>
+            </div>
+            <div class="product">
+                <img src="product5.jpg" alt="Product 5">
+                <h2>Product 5</h2>
+                <p>€30.00</p>
+            </div>
+            <div class="product">
+                <img src="product6.jpg" alt="Product 6">
+                <h2>Product 6</h2>
+                <p>€35.00</p>
+            </div>
+            <div class="product">
+                <img src="product7.jpg" alt="Product 7">
+                <h2>Product 7</h2>
+                <p>€40.00</p>
+            </div>
+            <div class="product">
+                <img src="product8.jpg" alt="Product 8">
+                <h2>Product 8</h2>
+                <p>€45.00</p>
+            </div>
+            <div class="product">
+                <img src="product9.jpg" alt="Product 9">
+                <h2>Product 9</h2>
+                <p>€50.00</p>
+            </div>
+        </section>
+
+        <section id="register">
+            <h2 class="registration-title">Register</h2>
+            <form action="/submit-registration" method="POST">
+                <label for="gender">Gender</label>
+                <input type="radio" id="gender-male" name="gender" value="male"> Male
+                <input type="radio" id="gender-female" name="gender" value="female"> Female
+                <br>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+                <br>
+                <label for="zipcode">ZIP Code</label>
+                <input type="text" id="zipcode" name="zipcode" required>
+                <br>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+                <br>
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="China">China</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="France">France</option>
+                    <option value="Greece">Greece</option>
+                    <option value="India">India</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Norway">Norway</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                </select>                
+                <br>
+                <label for="accept-terms">
+                    <input type="checkbox" id="accept-terms" name="accept-terms" required>
+                    Accept Terms and Conditions
+                </label>
+                <br>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="login">
+            <h2 class="login-title">Login</h2>
+            <form action="/submit-login" method="POST">
+                <label for="email">Email</label>
+                <input type="email" id="login-email" name="email" required>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" id="login-password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="reset-password">
+            <h2 class="forgot-password-title">Forgot Password</h2>
+            <form action="/submit-reset-password" method="POST">
+                <label for="email">Email</label>
+                <input type="email" id="reset-email" name="email" required>
+                <br>
+                <button type="submit">Reset Password</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pazifffic Chilll. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('homeButton').onclick = function() {
+            document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
