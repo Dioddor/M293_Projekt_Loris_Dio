@@ -2,17 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header {
-    background-color: #ffa1a1;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    width: 100%;
+    text-align: center; /* Optional: Zentriert den Text im gesamten Dokument */
 }
 
 .grid-container {
@@ -20,16 +10,13 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     width: 90%;
-    margin: 20px 0;
+    margin: 20px auto; /* Zentriert das Grid horizontal */
 }
 
 .grid-item {
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center; /* Optional: Zentriert den Inhalt horizontal */
     height: 150px;
 }
