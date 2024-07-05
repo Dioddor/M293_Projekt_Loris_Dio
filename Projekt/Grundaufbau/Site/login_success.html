@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login erfolgreich</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive.css">
-    <script>
-        function redirectToLoginSuccess() {
-            window.location.href = "login_success.html";
-        }
-    </script>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" style="text-decoration: none; color: inherit;">   <div class="logo">Pacific Chill</div> </a>  
+             
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -26,19 +22,10 @@
         </nav>
     </header>
     <main>
-        <section class="login">
-            <h1>Login</h1>
-            <form>
-                <div class="form-group">
-                    <label for="username">Benutzername:</label><br>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Passwort:</label><br>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="button" onclick="redirectToLoginSuccess()">Login</button>
-            </form>
+        <section class="login-success">
+            <h1>Login erfolgreich</h1>
+            <p>Herzlich willkommen zurück! Sie haben sich erfolgreich eingeloggt.</p>
+            <p><a href="index.html">Zurück zur Startseite</a></p>
         </section>
     </main>
     <footer>

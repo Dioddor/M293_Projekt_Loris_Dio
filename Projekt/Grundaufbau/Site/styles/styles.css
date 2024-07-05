@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -60,13 +63,14 @@ nav {
 
 main {
     padding: 20px;
+    flex: 1;
 }
 
 footer {
     background-color: #3498db;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px;
 }
 
 .footer-content {
@@ -107,13 +111,14 @@ footer {
 
 .footer-bottom {
     background-color: #2980b9;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .product-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .product-item {
@@ -121,10 +126,447 @@ footer {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-    width: calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
 }
 
 .product-item img {
+    width: 200px;
+    height: 200px;
+}
+
+#startbild {
+    height: 800px;
+    width: 100%;
+}
+
+#philosophietitel {
+    text-align: center;
+}
+
+.philosophy-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.philosophy-block {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(32, 181, 192, 0.5);
+    border-radius: 5px;
+}
+
+@media (max-width: 1025px) {
+    .product-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 770px) {
+    .product-item {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
+
+
+.blog {
+    margin-bottom: 40px;
+}
+
+.blog-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.blog h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.blog h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.blog img {
     max-width: 100%;
     height: auto;
+    margin-top: 20px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .blog h1 {
+        font-size: 28px;
+    }
+
+    .blog h2 {
+        font-size: 20px;
+    }
+
+    .blog p {
+        font-size: 16px;
+    }
+
+    .blog-content {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog h1 {
+        font-size: 24px;
+    }
+
+    .blog h2 {
+        font-size: 18px;
+    }
+
+    .blog p {
+        font-size: 14px;
+    }
+}
+
+.register {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.register h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .register {
+        padding: 15px;
+    }
+
+    .register h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register {
+        padding: 10px;
+    }
+
+    .register h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+.login {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .login {
+        padding: 15px;
+    }
+
+    .login h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login {
+        padding: 10px;
+    }
+
+    .login h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+.forgot-password {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.forgot-password h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .forgot-password {
+        padding: 15px;
+    }
+
+    .forgot-password h1 {
+        font-size: 28px;
+    }
+
+    input[type="email"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .forgot-password {
+        padding: 10px;
+    }
+
+    .forgot-password h1 {
+        font-size: 24px;
+    }
+
+    input[type="email"] {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+.login-success {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-success h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.login-success p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.login-success a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-success a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .login-success {
+        padding: 15px;
+    }
+
+    .login-success h1 {
+        font-size: 28px;
+    }
+
+    .login-success p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-success {
+        padding: 10px;
+    }
+
+    .login-success h1 {
+        font-size: 24px;
+    }
+
+    .login-success p {
+        font-size: 14px;
+    }
 }
