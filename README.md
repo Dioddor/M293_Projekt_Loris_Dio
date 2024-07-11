@@ -54,15 +54,15 @@ Die Webseite besteht aus mehreren Seiten, die durch einheitliches Design und ein
 Die Webseite verwendet eine Kombination aus HTML und CSS, um ein responsives und benutzerfreundliches Design zu gewährleisten. Die Hauptkomponenten des Designs umfassen:
 
 - **Header und Navigation:** Einheitliche Kopfzeile mit Logo und Navigationsmenü, das auf allen Seiten verfügbar ist.
-- **Footer:** Einheitliche Fußzeile mit Kontaktinformationen und nützlichen Links.
+- **Footer:** Einheitliche Fuzeile mit Kontaktinformationen und nützlichen Links.
 - **Formulare:** Benutzerfreundliche Formulare für Registrierung, Login und Passwortzurücksetzung.
-- **Responsives Design:** Anpassung des Layouts an verschiedene Bildschirmgrößen, um eine optimale Benutzererfahrung auf Desktops, Tablets und Mobilgeräten zu gewährleisten.
+- **Responsives Design:** Anpassung des Layouts an verschiedene Bildschirmgrössen, um eine optimale Benutzererfahrung auf Desktops, Tablets und Mobilgeräten zu gewährleisten.
 
 ### Besonderheiten
 
 - **Benutzerfreundlichkeit:** Klare und einfache Navigation, die es Benutzern ermöglicht, leicht zu den gewünschten Seiten zu gelangen.
 - **Ästhetik:** Ansprechendes Design mit konsistenter Farbgebung und Typografie.
-- **Responsivität:** Flexibles Layout, das sich an verschiedene Gerätegrößen anpasst.
+- **Responsivität:** Flexibles Layout, das sich an verschiedene Gerätegrössen anpasst.
 - **Formvalidierung:** Sicherstellung, dass alle erforderlichen Felder korrekt ausgefüllt sind, bevor Formulare abgeschickt werden.
 
 ### Fazit
